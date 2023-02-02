@@ -1,0 +1,64 @@
+{
+  "name": "paket-kontrol",
+  "version": "0.0.0",
+  "main": "cli.js",
+  "directories": {
+    "lib": "./cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "bin": "./cli.js",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "meow": "^11.0.0",
+    "semver": "^7.3.8"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "fix:test": "xo --fix",
+    "postversion": "git push origin main && git push origin --tags main && yarn publish --access public"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibodev1/paket-kontrol.git"
+  },
+  "homepage": "https://github.com/ibodev1/paket-kontrol#readme",
+  "bugs": {
+    "url": "https://github.com/ibodev1/paket-kontrol/issues"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "package.json",
+    "paket kontrol",
+    "npm version",
+    "version"
+  ],
+  "author": "İbrahim Ödev <ibrahimodev42@gmail.com>",
+  "description": "Projenizde yüklü npm paketlerinin versiyonlarının güncel olup olmadığını kontrol etmeniz için yardımcı cli pakedi.",
+  "devDependencies": {
+    "ava": "^5.1.1",
+    "xo": "^0.53.1"
+  },
+  "xo": {
+    "space": true,
+    "rules": {
+      "n/prefer-global/process": "off",
+      "unicorn/text-encoding-identifier-case": "off",
+      "unicorn/no-array-callback-reference": "off",
+      "no-negated-condition": "off",
+      "unicorn/prefer-top-level-await": "off",
+      "unicorn/prevent-abbreviations": "off",
+      "no-await-in-loop": "off"
+    }
+  }
+}
