@@ -20,7 +20,7 @@
     "semver": "^7.3.8"
   },
   "scripts": {
-    "test": "xo && ava",
+    "test": "xo",
     "fix:test": "xo --fix",
     "postversion": "git push origin main && git push origin --tags main && yarn publish --access public"
   },
@@ -46,7 +46,6 @@
   "author": "İbrahim Ödev <ibrahimodev42@gmail.com>",
   "description": "Projenizde yüklü npm paketlerinin versiyonlarının güncel olup olmadığını kontrol etmeniz için yardımcı cli pakedi.",
   "devDependencies": {
-    "ava": "^5.1.1",
     "xo": "^0.53.1"
   },
   "xo": {
