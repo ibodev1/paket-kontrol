@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import * as path from 'node:path';
 import * as fs from 'node:fs';
+import fetch from 'node-fetch';
 import meow from 'meow';
 import * as semver from 'semver';
 import chalk from 'chalk';
