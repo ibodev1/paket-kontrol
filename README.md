@@ -7,11 +7,11 @@
 [Node.js](https://nodejs.org) 14+ sürümünün kurulu olduğundan emin olun. Ardından aşağıdakileri çalıştırın:
 
 ```sh
-npm install --global paket-kontrol
+npm install --global paket-kontrol@latest
 ```
 yada
 ```sh
-yarn global add paket-kontrol
+yarn global add paket-kontrol@latest
 ```
 
 ## Kullanım
