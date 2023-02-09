@@ -9,7 +9,9 @@
 ```sh
 npm install --global paket-kontrol@latest
 ```
+
 yada
+
 ```sh
 yarn global add paket-kontrol@latest
 ```
@@ -17,26 +19,38 @@ yarn global add paket-kontrol@latest
 ## Kullanım
 
 ### Paket kontrol için
+
 ```sh
 paket-kontrol
 ```
+
 yada
+
 ```sh
 npx paket-kontrol
 ```
 
-<img src="1.png" width="400">
+<img src="./previews/1.png" width="400">
 
 ### Güncel olmayan paketleri güncellemek için.
+
 ```sh
 paket-kontrol -u
 ```
+
 yada
+
 ```sh
 npx paket-kontrol -u
 ```
 
-<img src="2.png" width="400">
+<img src="./previews/2.png" width="400">
+
+### TODO (Yapılacaklar)
+
+- [ ] `--dev, -d` dev paketleri güncelleme yapılacak.
+- [ ] `--peer, -p` peer paketleri güncelleme yapılacak
+- [ ] `--all` tüm paketleri güncelleme yapılacak
 
 ## İlişkili & Önerilen
 
