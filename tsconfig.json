@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "rootDir": "./",
+    "outDir": "dist/",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "meow": ["./node_modules/meow"],
+      "chalk": ["./node_modules/chalk"],
+      "*.ts": ["*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

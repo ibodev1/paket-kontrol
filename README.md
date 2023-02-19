@@ -48,8 +48,8 @@ npx paket-kontrol -u
 
 ### TODO (Yapılacaklar)
 
-- [ ] `--dev, -d` dev paketleri güncelleme yapılacak.
-- [ ] `--peer, -p` peer paketleri güncelleme yapılacak
+- [x] `--dev, -d` dev paketleri güncelleme yapılacak.
+- [x] `--peer, -p` peer paketleri güncelleme yapılacak
 - [ ] `--all` tüm paketleri güncelleme yapılacak
 
 ## İlişkili & Önerilen

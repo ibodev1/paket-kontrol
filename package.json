@@ -1,14 +1,14 @@
 {
   "name": "paket-kontrol",
   "version": "0.0.4",
-  "main": "cli.js",
+  "main": "dist/cli.js",
   "directories": {
-    "lib": "./cli.js"
+    "lib": "./dist/cli.js"
   },
   "files": [
     "cli.js"
   ],
-  "bin": "./cli.js",
+  "bin": "./dist/cli.js",
   "license": "MIT",
   "type": "module",
   "publishConfig": {
@@ -23,7 +23,8 @@
   "scripts": {
     "test": "xo",
     "fix:test": "xo --fix",
-    "postversion": "git push origin main && git push origin --tags main && yarn publish --access public"
+    "build": "rimraf dist/ && tsc",
+    "postversion": "yarn build && git push origin main --tags && yarn publish --access public"
   },
   "engines": {
     "node": ">=14"
@@ -47,6 +48,11 @@
   "author": "İbrahim Ödev <ibrahimodev42@gmail.com>",
   "description": "Projenizde yüklü npm paketlerinin versiyonlarının güncel olup olmadığını kontrol etmeniz için yardımcı cli pakedi.",
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/meow": "^6.0.0",
+    "@types/node-fetch": "^2.6.2",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5",
     "xo": "^0.53.1"
   },
   "xo": {
