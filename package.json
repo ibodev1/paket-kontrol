@@ -1,6 +1,6 @@
 {
   "name": "paket-kontrol",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/cli.js",
   "directories": {
     "lib": "./dist/cli.js"
