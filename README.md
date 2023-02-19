@@ -50,7 +50,8 @@ npx paket-kontrol -u
 
 - [x] `--dev, -d` dev paketleri güncelleme yapılacak.
 - [x] `--peer, -p` peer paketleri güncelleme yapılacak
-- [ ] `--all` tüm paketleri güncelleme yapılacak
+- [ ] `--all, -a` tüm paketleri güncelleme yapılacak
+- [ ] `--name, -n [DEPENDENCIES_NAME]` belirtilen addaki paketleri güncelleme yapılacak
 
 ## İlişkili & Önerilen
 
