@@ -4,6 +4,11 @@
 
 [![npm version](https://badge.fury.io/js/paket-kontrol.svg)](https://badge.fury.io/js/paket-kontrol)
 ![NPM](https://img.shields.io/npm/l/paket-kontrol)
+![GitHub Repo stars](https://img.shields.io/github/stars/ibodev1/paket-kontrol?style=social)
+![node-current](https://img.shields.io/node/v/paket-kontrol)
+![GitHub last commit](https://img.shields.io/github/last-commit/ibodev1/paket-kontrol)
+![npm](https://img.shields.io/npm/dw/paket-kontrol)
+![GitHub top language](https://img.shields.io/github/languages/top/ibodev1/paket-kontrol)
 
 ## İndirme
 
