@@ -2,6 +2,9 @@
 
 > Projenizde yüklü npm paketlerinin versiyonlarının güncel olup olmadığını kontrol etmeniz için yardımcı cli pakedi.
 
+[![npm version](https://badge.fury.io/js/paket-kontrol.svg)](https://badge.fury.io/js/paket-kontrol)
+![NPM](https://img.shields.io/npm/l/paket-kontrol)
+
 ## İndirme
 
 [Node.js](https://nodejs.org) 14+ sürümünün kurulu olduğundan emin olun. Ardından aşağıdakileri çalıştırın:
