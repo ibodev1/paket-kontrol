@@ -1,11 +1,11 @@
-import * as fs from "node:fs";
+import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import chalk from "chalk";
 
 const getPackageFile = async () => {
   try {
     const readFile =
-      (await fs.readFileSync(
+      (await fs.readFile(
         path.resolve(process.cwd() + "\\package.json"),
         "utf8"
       )) ?? {};
@@ -26,7 +26,7 @@ const getPackageFile = async () => {
 
 const updatePackageFile = async (newPackageFile: JSON) => {
   try {
-    await fs.writeFileSync(
+    await fs.writeFile(
       path.resolve(process.cwd() + "\\package.json"),
       JSON.stringify(newPackageFile, null, 2),
       "utf-8"
