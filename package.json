@@ -1,11 +1,11 @@
 {
   "name": "paket-kontrol",
   "version": "0.0.7",
-  "main": "dist/cli.js",
+  "main": "bin/cli.js",
   "directories": {
-    "lib": "dist/"
+    "lib": "bin/"
   },
-  "bin": "./dist/cli.js",
+  "bin": "./bin/cli.js",
   "license": "MIT",
   "type": "module",
   "publishConfig": {
@@ -15,22 +15,24 @@
     "chalk": "^5.2.0",
     "meow": "^11.0.0",
     "node-fetch": "^3.3.0",
-    "semver": "^7.3.8"
+    "semver": "^7.3.8",
+    "update-notifier": "^6.0.2"
   },
   "scripts": {
     "test": "xo",
     "fix:test": "xo --fix",
-    "build": "rimraf dist/ && tsc",
+    "build": "rimraf bin/ && tsc",
     "postversion": "yarn build && git push origin main --tags && yarn publish --access public"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=10",
+    "yarn": ">=1.22.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ibodev1/paket-kontrol.git"
   },
-  "homepage": "https://github.com/ibodev1/paket-kontrol#readme",
+  "homepage": "https://github.com/ibodev1/paket-kontrol",
   "bugs": {
     "url": "https://github.com/ibodev1/paket-kontrol/issues"
   },
@@ -48,6 +50,7 @@
     "@types/chalk": "^2.2.0",
     "@types/meow": "^6.0.0",
     "@types/node-fetch": "^2.6.2",
+    "@types/update-notifier": "^6.0.2",
     "rimraf": "^4.1.2",
     "typescript": "^4.9.5",
     "xo": "^0.53.1"
